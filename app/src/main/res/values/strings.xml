@@ -24,6 +24,7 @@
     <string name="action">action</string>
     <string name="bottom_sheet_action">bottom_sheet_action</string>
     <string name="selected_color">selectedColor</string>
+    <string name="default_web_client_id">"782968888706-q08btekr75dsbnakaik8m05s8k0um2h6.apps.googleusercontent.com"</string>
 
     <string name="blue">Blue</string>
     <string name="cyan">Cyan</string>

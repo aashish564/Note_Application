@@ -3,6 +3,7 @@ plugins {
     id("kotlin-android")
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 }
 
 kotlin {
@@ -22,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.noteapp"
-        minSdk = 19
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -70,8 +71,12 @@ dependencies {
 
     // Room components
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation("com.google.firebase:firebase-auth:23.0.0")
+    implementation("com.google.firebase:firebase-database:21.0.0")
     ksp("androidx.room:room-compiler:2.6.1")
     androidTestImplementation("androidx.room:room-testing:2.6.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation("com.google.firebase:firebase-analytics")
 
     // Lifecycle components
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
@@ -86,6 +91,7 @@ dependencies {
     // UI
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.android.material:material:1.12.0")
+    implementation ("com.google.android.gms:play-services-auth:21.2.0")
 
     // Sdp
     implementation("com.intuit.sdp:sdp-android:1.1.1")
