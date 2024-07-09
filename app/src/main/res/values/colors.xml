@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primaryDark">#171c26</color>
     <color name="secondaryDark">#171c26</color>
+    <color name="green">#53E88B</color>
+    <color name="startcolor">#53E88B</color>
+    <color name="endcolor">#15BE77</color>
 
     <color name="lightGreyDark">#3e434e</color>
 </resources>
